@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="modal.css" />
+  <title>Rock, Paper, Scissor Game</title>
+</head>
+
+<body>
+  <div class="title">
+    <h1>
+      <span>ROCK</span>
+      <span>PAPER</span>
+      <span>SCISSOR</span>
+    </h1>
+  </div>
+  <h1 class="signBoard">SCOREBOARD</h1>
+  <div class="user">User</div>
+  <div class="computer">Computer</div>
+  <div class="scoreboard" id="scoreBoard">
+    <p>0</p>
+    <p>0</p>
+  </div>
+  <div class="restart" id="restart">Restart Game</div>
+
+  <div class="choicesContainer">
+    <img id="rock" class="choice" src="pic/rock.png" alt="bato" />
+    <img id="paper" class="choice" src="pic/paper.png" alt="papel" />
+    <img id="scissor" class="choice" src="pic/scissor.png" alt="gunting" />
+  </div>
+
+  <div class="modal">
+    <div id="result" class="modal-content"></div>
+  </div>
+</body>
+<script src="app.js"></script>
+
+</html>

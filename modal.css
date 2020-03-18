@@ -1,0 +1,66 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.7);
+  align-items: center;
+}
+
+.modal-content {
+  background: rgb(68, 93, 109);
+  text-align: center;
+  margin: 4% auto;
+  width: 350px;
+  border-radius: 10px;
+  padding: 3rem;
+  box-shadow: 0 5px 8px 0 rgba(53, 33, 75, 0.2),
+    0 7px 20px 0 rgba(42, 61, 114, 0.17);
+  animation: modalopen 1s ease;
+}
+
+.modal .modal-content h1 {
+  padding: 1rem;
+  font-size: 50px;
+}
+
+.modal .modal-content p {
+  padding: 1rem;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.modal .modal-content strong {
+  color: rgb(218, 117, 133);
+  text-transform: uppercase;
+}
+
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 300px;
+    margin: 20% auto;
+  }
+
+  .modal .modal-content h1 {
+    padding: 0.5rem;
+    font-size: 30px;
+  }
+
+  .modal .modal-content img {
+    width: 150px;
+  }
+}
